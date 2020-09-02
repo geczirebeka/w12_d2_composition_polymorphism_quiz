@@ -8,7 +8,17 @@ poly means multiple/many and morphism means form, so many forms.
 
 2. What does it mean when we apply polymorphism to OO design? Give a simple Java example.
 
+It means we can wrap our objects up in an enclosing type that defines a contract between them all.
 
+private double money;
+    private ArrayList<Vehicle> ownedCars;
+
+    public Customer(double money) {
+        this.money = money;
+        this.ownedCars = new ArrayList<Vehicle>();
+    }
+
+    But here because a car, hybrid car and electric car are also type vehicle they can be part of the customer's ownedCars.
 
 3. What can we use to implement polymorphism in Java?
 
